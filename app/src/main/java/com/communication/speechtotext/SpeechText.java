@@ -116,6 +116,7 @@ public class SpeechText {
         } else if (result_message.indexOf("browser") != -1){
             textSpeech.speakOut("Opening a browser right away master.");
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/AnNJPf-4T70"));
+            context.startActivity(intent);
         }
 
 
